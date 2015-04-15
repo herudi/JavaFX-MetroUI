@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 9, 2015 6:12:43 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="herudi.model.Product" table="PRODUCT" schema="APP" optimistic-lock="version">
+        <id name="productId" type="java.lang.Integer">
+            <column name="PRODUCT_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="manufacturerId" type="int">
+            <column name="MANUFACTURER_ID" not-null="true" />
+        </property>
+        <property name="productCode" type="string">
+            <column name="PRODUCT_CODE" length="2" not-null="true" />
+        </property>
+        <property name="purchaseCost" type="big_decimal">
+            <column name="PURCHASE_COST" precision="12" />
+        </property>
+        <property name="quantityOnHand" type="java.lang.Integer">
+            <column name="QUANTITY_ON_HAND" />
+        </property>
+        <property name="markup" type="big_decimal">
+            <column name="MARKUP" precision="4" />
+        </property>
+        <property name="available" type="string">
+            <column name="AVAILABLE" length="5" />
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

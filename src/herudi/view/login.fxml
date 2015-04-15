@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="327.0" prefWidth="493.0" styleClass="page1" stylesheets="@../css/login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="herudi.controller.controllLogin">
+   <children>
+      <AnchorPane layoutX="97.0" layoutY="25.0" prefHeight="327.0" prefWidth="493.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="txtUsername" layoutX="132.0" layoutY="133.0" opacity="0.0" prefHeight="33.0" prefWidth="305.0" promptText="This Username App" />
+            <PasswordField fx:id="txtPassword" layoutX="132.0" layoutY="173.0" opacity="0.0" prefHeight="33.0" prefWidth="305.0" promptText="This Password App" />
+            <Text fx:id="lblWelcome" fill="WHITE" layoutX="49.0" layoutY="75.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome On">
+               <font>
+                  <Font name="Segoe UI Light" size="44.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblUserLogin" fill="WHITE" layoutX="94.0" layoutY="106.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Login Applications">
+               <font>
+                  <Font name="Segoe UI Light" size="24.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblUsername" fill="WHITE" layoutX="47.0" layoutY="155.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username :">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Text fx:id="lblPassword" fill="WHITE" layoutX="47.0" layoutY="195.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password  :">
+               <font>
+                  <Font name="Segoe UI" size="16.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnLogin" layoutX="314.0" layoutY="215.0" mnemonicParsing="false" onAction="#aksiLogin" opacity="0.0" prefHeight="33.0" prefWidth="123.0" text="Login" />
+            <Text fx:id="lblRudyCom" fill="WHITE" layoutX="9.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="http://rudy-007.com/">
+               <font>
+                  <Font name="Segoe UI" size="12.0" />
+               </font>
+            </Text>
+            <Label fx:id="lblClose" layoutX="472.0" layoutY="5.0" text="X" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

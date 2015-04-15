@@ -1,0 +1,1075 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 9, 2015, 6:21:30 PM
+    Author     : Herudi
+*/
+
+.page1{
+    -fx-border-color:#2c62b5;
+    -fx-background-color: white;
+}
+
+.test{
+    -fx-background-color: transparent;
+}
+
+.table-row-cell:empty {
+    -fx-background-color: #f8f8f8;
+    -fx-base: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 0;
+}
+  
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+
+.split-pane:horizontal > * > .split-pane-divider {
+   -fx-border-color: transparent -fx-box-border transparent #BBBBBB;
+   -fx-background-color: transparent, -fx-inner-border-horizontal;
+   -fx-background-insets: 0, 0 1 0 1;
+}
+
+/* vertical the two nodes are placed on top of each other. */
+.split-pane *.vertical-grabber {
+    -fx-padding: 0;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-shape: " ";
+}
+
+.table-cell {     
+    -fx-padding: 0.5em 0.5em 0.1em 0.3em;
+    -fx-border-color: -fx-box-border -fx-box-border transparent transparent;  
+    -fx-font: 12px "Segoe UI";    
+    -fx-text-fill: #212121;
+    -fx-alignment: CENTER_LEFT;
+    -fx-border-insets: 0;
+}
+.table-view {
+    -fx-table-header-border-color: #959595;
+    -fx-table-cell-border-color: -fx-box-border;
+    -fx-control-inner-background: white;
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+    -fx-border-insets: 0;
+    -fx-background-insets: 0;
+}
+.table-view:focused {
+    -fx-background-color: -fx-box-border,-fx-box-border, white;
+}
+.table-row-cell {    
+    -fx-background-color: white;
+}
+.table-row-cell:odd {
+    -fx-background-color: white;
+    -fx-background-insets: 0, 0 0 1 0;
+}
+.table-view:focused .table-row-cell:focused,.table-view:focused .table-row-cell:focused:odd {
+    -fx-background-color: -fx-box-border, white;
+    -fx-background-insets: 0, 1, 2;
+}
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-box-border, rgb(205,205,205);
+}
+.table-view:focused .table-row-cell:filled:selected, .table-view:row-selection .table-row-cell:filled:hover:selected {    
+    -fx-background-color: #f4f3f3;
+    -fx-background-insets: 0,1 1 1 1 0;
+}
+.table-view:focused .table-row-cell:filled:focused:selected:hover {    
+    -fx-background-color: -fx-box-border, rgb(205,205,205);
+    -fx-background-insets: 0,1 1 1 1 0;
+}
+.table-row-cell:filled:selected:focused, .table-row-cell:filled:selected {
+    -fx-background-color: #f5f5f5;
+}
+.table-view:row-selection .table-row-cell:filled:hover { 
+    -fx-background-color: #f5f5f5;
+}
+.table-view:row-selection .table-row-cell:filled:focused:hover { 
+    -fx-background-color: #f4f3f3;
+}
+.table-view:focused .table-row-cell:filled:focused:hover {
+    -fx-background-color: -fx-box-border,rgb(231,231,231);
+}
+.table-view .column-header-background {
+    -fx-background-color: white;
+}
+ 
+.table-view .column-header .label{
+    -fx-text-fill: #2b579a;
+    -fx-alignment: CENTER_LEFT;
+}
+
+ 
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: white;    
+    -fx-size: 35;
+    -fx-border-color: -fx-box-border;
+    -fx-border-insets: -1 0 0 -1;
+    -fx-padding: 0 5 0 0;
+}
+.table-view .show-hide-columns-button {
+    -fx-background-color: white;
+    -fx-border-color: -fx-box-border;
+    -fx-border-insets: -1 -1 0 0;
+}
+.table-view .column-drag-header {    
+    -fx-background-color: rgb(45,137,239);
+    -fx-opacity: 0.6;
+}
+.table-view .column-resize-line {  
+    -fx-background-color: rgb(45,137,239);
+}
+.table-view .column-overlay {
+    -fx-background-color: darkgray;
+    -fx-opacity: 0.2;
+}
+.table-view .arrow {
+    -fx-padding: 0.2em;
+    -fx-shape: "M4,17v-2.889l4.124-3.86l4.125,3.86V17l-4.125-3.375L4,17z";
+}
+
+.background{
+    -fx-background-color: white;
+}
+ 
+.header{
+    -fx-font-size: 42pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: black;
+}
+ 
+.item-title{
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: black;
+    -fx-opacity: 0.6;
+      
+}
+ 
+/*******************************************************************************
+ *                                                                             *
+ * Push Button                                                                 *
+ *                                                                             *
+ ******************************************************************************/
+ 
+.btn {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-style: none; 
+    -fx-background-radius: 0;
+    -fx-border-color : transparent;
+/*    -fx-border-width:2;*/
+    -fx-background-color: #299bb4;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-font-size: 12px;
+    -fx-text-fill: white;
+}
+ 
+.btn:hover{
+    -fx-background-color: #699ca7;
+}
+ 
+.btn:pressed, .btn:default:hover:pressed
+{
+  -fx-background-color: black;
+  -fx-text-fill: white;
+}
+ 
+.btn:focused
+{
+    -fx-border-color: black;
+    -fx-border-width: 1;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;   
+}
+ 
+.btn:disabled, .btn:default:disabled
+{
+    -fx-opacity: 0.4;
+    -fx-background-color: #cccccc;
+    -fx-text-fill: #212121;
+}
+ 
+.btn:default
+{
+    -fx-background-color: #5585be;
+    -fx-text-fill: #ffffff;
+}
+ 
+.btn:default:hover{
+    -fx-background-color: #219297;
+}
+ 
+ 
+/*******************************************************************************
+ *                                                                             *
+ * Toggle Button                                                               *
+ *                                                                             *
+ ******************************************************************************/
+ 
+.toggle-button {
+    -fx-padding: 5 22 5 22;   
+    -fx-border-style: null; 
+    -fx-background-radius: 0;
+ 
+    -fx-background-color: #cccccc;
+   
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: black;
+}
+ 
+.toggle-button:focused {
+    -fx-border-color: black;
+    -fx-border-width: 1;
+    -fx-border-style: segments(1, 1);
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;   
+}
+ 
+.toggle-button:hover {
+    -fx-background-color: #d8d8d8;
+    -fx-text-fill: black;
+}
+ 
+.toggle-button:selected {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+ 
+.toggle-button:selected:hover {
+    -fx-background-color: #666;
+    -fx-text-fill: white;
+}
+ 
+.toggle-button:disabled {
+    -fx-opacity: -fx-disabled-opacity;
+}
+ 
+ 
+/*******************************************************************************
+ *                                                                             *
+ * Check Box                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+ 
+.check-box {
+    -fx-text-fill: black;
+}
+ 
+.check-box .box {
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-color: #bababa;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-padding: 1;
+}
+ 
+.check-box .mark {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+     
+    -fx-padding:7px;
+    -fx-shape: "M1,10L3,8L7,12L14,5L16,7L7,16Z"
+}
+ 
+.check-box:focused .box{
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-color: black, #bababa;
+    -fx-border-width: 1, 2;
+    -fx-border-style: segments(1, 1), solid;
+    -fx-border-insets: -3, 0;
+}
+ 
+.check-box:selected .mark {
+    -fx-background-color: black;
+}
+ 
+.check-box:indeterminate .mark {
+   -fx-background-color: black; 
+   -fx-background-insets: 2.8; 
+   -fx-padding:7px;
+   -fx-shape: null;
+}
+ 
+.check-box:disabled
+{
+    -fx-opacity: 0.4;
+}
+ 
+.check-box:disabled .box
+{
+    -fx-background-color: #cdcdcd;
+    -fx-border-color: #aaa;
+ 
+}
+ 
+.check-box:armed .box
+{
+    -fx-background-color: white, black;
+    -fx-background-insets: -1, 2;
+    -fx-background-radius: 0, 0;
+}
+ 
+.check-box:armed .box .mark
+{
+  -fx-background-color: white;
+}
+ 
+/*******************************************************************************
+ *                                                                             *
+ * Radio Button                                                                *
+ *                                                                             *
+ ******************************************************************************/
+ 
+.radio-button {
+    -fx-text-fill: #212121;
+}
+ 
+.radio-button .radio  {
+   -fx-background-color: white;
+   -fx-background-radius: 1.0em; /* large value to make sure this remains circular */
+   -fx-background-insets: 0;
+    
+   -fx-border-radius: 1.0em;
+   -fx-border-color: #bababa;
+     
+   -fx-padding: 4px; /* 4 -- padding from outside edge to the inner black dot */
+}
+ 
+.radio-button:hover .radio {
+    -fx-border-color: #919191;
+}
+ 
+ 
+.radio-button .dot {
+   -fx-background-color: transparent;
+   -fx-background-insets: 0;
+   -fx-background-radius: 1.0em; /* large value to make sure this remains circular */
+   -fx-padding: 6px; /* 3 -- radius of the inner black dot when selected */
+}
+ 
+.radio-button:selected .dot {
+   -fx-background-color: #212121;
+}
+ 
+.radio-button:disabled
+{
+    -fx-opacity: 0.5;
+}
+ 
+.radio-button:disabled .radio
+{
+    -fx-background-color: #e6e6e6;
+    -fx-border-color: #d9d9d9;
+}
+ 
+.radio-button:focused .radio
+{
+   -fx-background-color: white;
+   -fx-background-radius: 1.0em; /* large value to make sure this remains circular */
+   -fx-background-insets: 0;
+    
+   -fx-border-style: solid, segments(1, 1);
+   -fx-border-radius: 1.0em, 0;
+   -fx-border-color: #bababa, black;
+   -fx-border-insets: 0px, -2px;
+   -fx-border-width: 1px, 1px;
+     
+   -fx-padding: 4px; /* 4 -- padding from outside edge to the inner black dot */  
+}
+ 
+.radio-button:armed .radio {
+    -fx-background-color: #212121;
+    -fx-border-color: #212121;
+}
+ 
+.radio-button:pressed .radio
+{
+    -fx-background-color: #212121;
+    -fx-border-color: #212121;
+}
+ 
+.radio-button:pressed:selected .dot
+{
+    -fx-background-color: white;
+}
+ 
+.radio-button:armed .dot
+{
+    -fx-background-color: black;
+}
+ 
+.radio-button:focused:armed .radio
+{
+   -fx-background-color: #212121;
+   -fx-background-radius: 1.0em; /* large value to make sure this remains circular */
+   -fx-background-insets: 0;
+    
+   -fx-border-style: solid, segments(1, 1);
+   -fx-border-radius: 1.0em, 0;
+   -fx-border-color: #212121, #212121;
+   -fx-border-insets: 0px, -2px;
+   -fx-border-width: 1px, 1px;
+     
+   -fx-padding: 4px; /* 4 -- padding from outside edge to the inner black dot */  
+}
+
+
+
+.scroll-bar .thumb{
+    -fx-background-color: #cdcdcd;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-color: #dadada;
+}
+
+
+/* The following is not working. Maybe related to RT-10521*/
+.scroll-bar .thumb:pressed {
+    -fx-background-color: #606060;
+}
+
+
+.scroll-bar .track {
+    -fx-background-color: #f0f0f0;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+.scroll-bar .track-background {
+    -fx-background-color: #f0f0f0;
+    -fx-background-insets: 0;
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: #f0f0f0;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+
+    -fx-padding: 0.25em; /* 3 */
+}
+
+.scroll-bar .increment-button:hover, .scroll-bar .decrement-button:hover  {
+    -fx-background-color: #dadada;
+}
+
+.scroll-bar .increment-button:pressed, .scroll-bar .decrement-button:pressed {
+    -fx-background-color: #606060;
+}
+
+.scroll-bar:horizontal .increment-arrow {
+    -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.5em 0.333333em 0.0em 0.0em; /* 6 4 0 0 */
+    -fx-shape: "M7.626,12.876L4.251,8.751H7.14L11,12.876L7.14,17H4.251L7.626,12.876z";
+}
+
+.scroll-bar:vertical .increment-arrow {
+    -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.333333em 0.5em 0.0em 0.0em; /* 4 6 0 0 */
+    -fx-shape: "M8.124,13.625l4.125-3.375v2.889l-4.125,3.86L4,13.139V10.25L8.124,13.625z";
+}
+
+.scroll-bar .increment-button:pressed .increment-arrow {
+    -fx-background-color: white, white;
+}
+
+.scroll-bar:horizontal .decrement-arrow {
+    -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.5em 0.333333em 0.0em 0.0em; /* 6 4 0 0 */
+    -fx-shape: "M11,17H8.111l-3.86-4.124l3.86-4.125H11l-3.375,4.125L11,17z";
+}
+
+.scroll-bar:vertical .decrement-arrow {
+    -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.333333em 0.5em 0.0em 0.0em; /* 4 6 0 0 */
+    -fx-shape: "M4,17v-2.889l4.124-3.86l4.125,3.86V17l-4.125-3.375L4,17z";
+}
+
+.scroll-bar .decrement-button:pressed .decrement-arrow {
+    -fx-background-color: white, white;
+}
+
+.scroll-bar:disabled {
+    -fx-opacity: 0.4;
+}
+
+.table-row-cell:empty {
+    -fx-background-color: white;
+    -fx-base: transparent;
+    -fx-control-inner-background: transparent;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 0;
+}
+  
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+ 
+/*******************************************************************************
+ *                                                                             *
+ * Tooltip                                                                     *
+ *                                                                             *
+ ******************************************************************************/
+ 
+/*.tooltip {
+    -fx-background-color: white;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0 0 0 0;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em;  4 8 4 8 
+    -fx-effect: dropshadow( one-pass-box , #808080 , 5, 0.0 , 0 , 0 );
+    -fx-font-family: "Segoe UI Semilight", "Segoe UI Light", "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-text-fill: #949494;
+}
+ 
+.page-corner {
+    -fx-padding: 4.5 4.5 4.5 4.5;
+    -fx-background-color: transparent;
+    -fx-shape: null;
+    -fx-effect: null;
+}*/
+ 
+ /*******************************************************************************
+ *                                                                             *
+ * TextBox (and PasswordBox)                                                   *
+ *                                                                             *
+ ******************************************************************************/
+
+.text-field{
+    -fx-skin: "herudi.style.MetroTextFieldSkin";
+}
+
+.text-input{
+    -fx-background-radius: 0, 0;
+    -fx-background-color: white;
+    -fx-border-color: gray;
+    -fx-background-insets: 0;
+
+    -fx-prompt-text-fill: #818181;
+
+    -fx-highlight-fill: #008287; /* TODO: this probably is the "active" color" */
+    -fx-highlight-text-fill: white;
+}
+
+.text-input:hover{
+    -fx-background-color: #e2e2e2;
+}
+
+.text-input:focused{
+    -fx-background-color: #5c5c5c, white;
+
+    -fx-text-fill: black;
+}
+
+/*.text-input > Pane{*/
+/*-fx-padding: 0.333333em 0.583em 0.333333em 0em; *//* 4 7 4 0 */
+/*}*/
+
+.text-input > .right-button{
+    -fx-cursor: default;
+
+    -fx-background-insets: -0.1666665em -0.45em -0.1666665em -0.45em; /* 4 7 4 7 -> this values are subtracted by 2px in em because of the border of the textfield */
+}
+
+.text-field > .right-button > .right-button-graphic {
+    -fx-shape            : "M221.738,305.873l6.135,6.16l-2.875,2.863l-6.135-6.159l-6.263,6.237l-2.864-2.875l6.263-6.238l-6.177-6.202l2.875-2.863l6.177,6.201l6.244-6.22l2.864,2.876L221.738,305.873z";
+
+    -fx-padding: 0.5em 0.5em; /* TODO: put the real number here 18 18 */
+    -fx-background-color: black;
+}
+
+.text-input > .right-button:hover {
+    -fx-background-color: #dedede;
+}
+
+.text-input > .right-button:pressed {
+    -fx-background-color: black;
+}
+
+.text-input > .right-button:pressed > .right-button-graphic {
+    -fx-background-color: white;
+}
+
+.text-input:disabled
+{
+    -fx-opacity: 1;
+    -fx-background-insets: 0, 2;
+    -fx-background-color: #e7e6e6;
+    -fx-text-fill: #999999;
+}
+
+.item-title.disabled{
+    -fx-text-fill: #939393;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * PasswordBox                                                                 *
+ *                                                                             *
+ ******************************************************************************/
+
+.password-field {
+    -fx-skin: "herudi.style.MetroPasswordFieldSkin";
+}
+
+.password-field > .right-button > .right-button-graphic {
+    -fx-shape            : "M307.688,399.564c0,1.484-1.203,2.688-2.688,2.688c-1.484,0-2.688-1.203-2.688-2.688s1.203-2.688,2.688-2.688C306.484,396.876,307.688,398.08,307.688,399.564z M297.5,399h2.5c0,0,1.063-4,5-4c3.688,0,5,4,5,4h2.5c0,0-2.063-6.5-7.5-6.5C299,392.5,297.5,399,297.5,399z";
+    -fx-scale-shape: false;
+    -fx-background-color: black;
+}
+/*******************************************************************************
+ *                                                                             *
+ * PopupMenu                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+ 
+.context-menu {
+    -fx-background-color: white;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 0 0 0 0, 0 0 0 0, 0 0 0 0;
+    -fx-padding: 0.333333em 0em 0.333333em 0em; /* 4 1 4 1 */
+     
+    /* TODO: the border color below is not being respected - it appears as gray instead of black*/
+    -fx-border-color: #212121;
+    -fx-border-style: solid;
+}
+ 
+.context-menu .separator .line{
+    -fx-padding: 0.0em 0.333333em 0.0em 0.333333em;  /*0 4 0 4 */
+    -fx-border-style: solid;
+    -fx-background-color: #c2c2c2;
+    -fx-border-width: 0.5px;
+}
+ 
+/* TODO: try to scope the menu-item style to the contextmenu */
+.menu-item {
+    -fx-background-color: transparent;
+    -fx-padding: 0.666666em 0.999999em 0.4999995em 0.999999em;   /*6 12 6 12 */
+}
+.menu-bar{
+    -fx-background: -fx-accent;
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: #212121;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 12px;
+    -fx-border-color: #f0f0f0;
+}
+
+.menu-item .label {
+    -fx-text-fill: #212121;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 12px;
+}
+ 
+ 
+.menu-item:focused {
+     -fx-background: -fx-accent;
+     -fx-background-color: #dedede;
+}
+ 
+.menu-item:pressed
+{
+    -fx-background-color: #212121;
+    -fx-text-fill: white;
+}
+ 
+.menu-item:pressed .label
+{
+    -fx-text-fill: white;
+}
+ 
+/*******************************************************************************
+ *                                                                             *
+ * ScrollBar                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+ 
+.scroll-bar .thumb{
+    -fx-background-color: #cdcdcd;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+ 
+.scroll-bar .thumb:hover {
+    -fx-color: #dadada;
+}
+ 
+/* The following is not working. Maybe related to RT-10521*/
+.scroll-bar .thumb:pressed {
+    -fx-background-color: #606060;
+}
+ 
+ 
+.scroll-bar .track {
+     -fx-background-color: #f0f0f0;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+.scroll-bar .track-background {
+     -fx-background-color: #f0f0f0;
+    -fx-background-insets: 0;
+}
+ 
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: #f0f0f0;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+     
+    -fx-padding: 0.25em; /* 3 */
+}
+ 
+.scroll-bar .increment-button:hover, .scroll-bar .decrement-button:hover  {
+    -fx-background-color: #dadada;
+}
+ 
+.scroll-bar .increment-button:pressed, .scroll-bar .decrement-button:pressed {
+    -fx-background-color: #606060;
+}
+ 
+.scroll-bar:horizontal .increment-arrow {
+    -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.5em 0.333333em 0.0em 0.0em; /* 6 4 0 0 */
+    -fx-shape: "M7.626,12.876L4.251,8.751H7.14L11,12.876L7.14,17H4.251L7.626,12.876z";
+}
+ 
+.scroll-bar:vertical .increment-arrow {
+    -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.333333em 0.5em 0.0em 0.0em; /* 4 6 0 0 */
+    -fx-shape: "M8.124,13.625l4.125-3.375v2.889l-4.125,3.86L4,13.139V10.25L8.124,13.625z";
+}
+ 
+.scroll-bar .increment-button:pressed .increment-arrow {
+    -fx-background-color: white, white;
+}
+ 
+.scroll-bar:horizontal .decrement-arrow {
+    -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.5em 0.333333em 0.0em 0.0em; /* 6 4 0 0 */
+    -fx-shape: "M11,17H8.111l-3.86-4.124l3.86-4.125H11l-3.375,4.125L11,17z";
+}
+ 
+.scroll-bar:vertical .decrement-arrow {
+    -fx-background-color: -fx-mark-highlight-color, -fx-mark-color;
+    -fx-background-insets: 1 0 -1 0, 0;
+    -fx-padding: 0.333333em 0.5em 0.0em 0.0em; /* 4 6 0 0 */
+    -fx-shape: "M4,17v-2.889l4.124-3.86l4.125,3.86V17l-4.125-3.375L4,17z";
+}
+ 
+.scroll-bar .decrement-button:pressed .decrement-arrow {
+    -fx-background-color: white, white;
+}
+ 
+.scroll-bar:disabled {
+    -fx-opacity: 0.4;
+}
+ 
+/*******************************************************************************
+ *                                                                             *
+ * ScrollPane                                                                  *
+ *                                                                             *
+ ******************************************************************************/
+ 
+.scroll-pane {
+    -fx-background-color: transparent,-fx-background;
+}
+ 
+.scroll-pane .corner {
+    -fx-background-color: white, #f0f0f0;
+}
+ 
+ 
+/*******************************************************************************
+ *                                                                             *
+ * ComboBox                                                                    *
+ *                                                                             *
+ ******************************************************************************/
+ 
+.combo-box-base  {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0, 0, 0, 0;
+    -fx-border-color: gray;
+}
+ 
+.combo-box-base:hover {
+    -fx-background-color: transparent;
+     
+}
+ 
+/*.combo-box-base:focused {
+    -fx-background-color: -fx-focus-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-radius: 6.4, 4, 5, 3;
+    -fx-background-insets: -1.4, 0, 1, 2;
+}*/
+ 
+.combo-box-base:disabled {
+    -fx-opacity: .4;
+}
+ 
+/* ------- OPEN BUTTON ------- */
+.combo-box-base .arrow-button {
+    -fx-background-color: transparent, transparent, white;
+}
+
+
+/* ------- ARROW* ------- */
+.combo-box-base .arrow {
+    -fx-padding: 0.333333em 0.333333em 0.333333em 0.333333em; /* 4 4 4 4 */
+    -fx-shape: "M8.124,13.625l4.125-3.375v2.889l-4.125,3.86L4,13.139V10.25L8.124,13.625z";
+}
+ 
+.combo-box-popup .list-view {
+    -fx-background-color: #909090, -fx-control-inner-background;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0) , 8, 0.0 , 0 , 0 );
+}
+ 
+.combo-box-popup .list-view .list-cell:hover{
+    -fx-background-color: #dedede;
+    -fx-text-fill: #1d1d1d;
+}
+ 
+.combo-box-popup .list-view .list-cell:filled:selected{
+    -fx-background-color: #55c4fe;
+}
+ 
+.combo-box-popup .list-view .list-cell:filled:selected:hover {
+    -fx-background-color: #6dcdff;
+}
+ 
+.combo-box-popup .list-view .list-cell:filled:pressed, .combo-box-popup .list-view .list-cell:filled:selected:pressed
+{
+    -fx-background-color: #d3d3d3;
+    -fx-text-fill: #1d1d1d;
+}
+ 
+ 
+/*******************************************************************************
+ *                                                                             *
+ * ListSpinner (Jfxtras)                                                       *
+ *                                                                             *
+ ******************************************************************************/
+ 
+.list-spinner { 
+    -fx-skin: "jfxtras.labs.internal.scene.control.skin.ListSpinnerCaspianSkin";
+    -fx-background-color: #f0f0f0;
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 0;
+    -fx-padding: 0em 0em 0em 0em;
+    -fx-text-fill: #212121;
+}
+ 
+.list-spinner:hover {
+    -fx-color: #f0f0f0;
+}
+ 
+/*.ListSpinner:focused { 
+    -fx-color: -fx-focused-base;
+    -fx-background-color: -fx-focus-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: -1.4, 0, 1, 2;
+    -fx-background-radius: 6.4, 5, 4, 3;    
+}*/
+ 
+.list-spinner .value-pane { 
+    -fx-padding: 0.0em 0.0em 0.0em 0.0em;
+}
+ 
+.list-spinner .decrement-button, .list-spinner .increment-button
+{
+    -fx-background-color: #f0f0f0;
+    -fx-padding: 1.2500em 0.5000em 1.2500em 0.5000em; /* 15 6 15 6*/
+}
+ 
+.list-spinner .left-arrow { 
+    -fx-shape: "M301,415.5l-4.5,4.5l4.5,4.5h-3l-4.5-4.5l4.5-4.5H301z";
+    -fx-scale-shape: false;
+}
+ 
+.list-spinner .decrement-button:hover {
+    -fx-background-color: #dadada;
+}
+ 
+.list-spinner .decrement-button:pressed {
+    -fx-background-color: #606060;
+     
+}
+.list-spinner .decrement-button:pressed .left-arrow{ 
+    -fx-background-color: white;
+}
+ 
+.list-spinner .right-arrow { 
+    -fx-shape: "M296.5,415.5l4.5,4.5l-4.5,4.5h-3l4.5-4.5l-4.5-4.5H296.5z";
+    -fx-scale-shape: false;
+}
+ 
+.list-spinner .increment-button:hover {
+    -fx-background-color: #dadada;
+}
+ 
+.list-spinner .increment-button:pressed {
+    -fx-background-color: #606060;
+     
+}
+.list-spinner .increment-button:pressed .right-arrow {
+    -fx-background-color: white;
+}
+ 
+.list-spinner .down-arrow { 
+    -fx-shape: "M292.5,416.25l4.5,4.5l4.5-4.5v3l-4.5,4.5l-4.5-4.5V416.25z";
+    -fx-scale-shape: false;
+}
+.list-spinner .up-arrow { 
+    -fx-shape: "M292.5,420.75l4.5-4.5l4.5,4.5v3l-4.5-4.5l-4.5,4.5V420.75z";
+    -fx-scale-shape: false;
+}
+ 
+.list-spinner .text
+{
+    -fx-font-family: "Segoe UI"
+}
+ 
+.list-spinner:disabled {
+    -fx-opacity: .4;
+}
+
+/*.tab-header-background {
+    -fx-background-color: #ffffff;
+    -fx-border-color: white white #e1e1e1 white;
+    -fx-border-insets: 0;
+}
+
+.tab-pane{
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ffffff #ffffff #e1e1e1 #ffffff;
+}
+
+
+
+.tab{
+    -fx-background-color: #ffffff;
+    -fx-background-insets: 0;
+    -fx-border-color: #ffffff #ffffff #e1e1e1 #ffffff;
+    -fx-border-radius: 0;
+    -fx-font: 12px "Segoe UI Semibold";
+    -fx-text-fill: #42539d;
+    -fx-border-insets: 0;
+    
+}
+
+.tab:focus{
+    -fx-text-fill: #42539d;
+}
+
+.tab:selected{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 0 0 0 0;
+    -fx-border-radius: 0 0 0 0;
+    -fx-border-color: #e1e1e1 #e1e1e1 white #e1e1e1;
+    -fx-border-style: solid;
+    -fx-text-fill: #42539d;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e1e1e1 #e1e1e1 white #e1e1e1;
+}*/
+
+
+.tab-pane:top *.tab-header-area {
+    -fx-background-insets: 0, 0 0 1 0;
+ /* -fx-padding: 0.416667em 0.166667em 0.0em 0.833em; /* 5 2 0 10 */
+    -fx-padding: 0.416667em 0.166667em 0.0em 0.0em; /* overriden as 5 2 0 0 */
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #ffffff;
+    -fx-border-color: white white #e1e1e1 white;
+    -fx-border-insets: 0;
+    
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+.tab-pane .tab
+{
+    -fx-background-color: #e6e6e6;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #299bb4;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #828282;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: #ffffff;
+}
+
+.progress-bar {
+    -fx-background-color:
+        -fx-box-border,
+        linear-gradient(to bottom, derive(-fx-color,30%) 5%, derive(-fx-color,-17%));
+    -fx-background-insets: 0, 1;
+    -fx-indeterminate-bar-length: 90;
+    -fx-indeterminate-bar-escape: true;
+    -fx-indeterminate-bar-flip: false;
+    -fx-indeterminate-bar-animation-time: 0;
+    -fx-focus-traversable: true;
+    -fx-border-color: white;
+    
+}
+
+.progress-bar .bar {
+    -fx-background-color: #cccccc;
+    -fx-padding: 0.416667em; /* 5 */
+    -fx-border-color: transparent;
+}
+
+.progress-bar:indeterminate .bar {
+    -fx-background-color: white;
+}
+
+.progress-bar .track {
+    -fx-background-color:  white;
+    -fx-background-insets:  0, 1;
+}
+
+.progress-bar:disabled {
+    -fx-opacity: 1.0
+}
+

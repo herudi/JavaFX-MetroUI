@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 9, 2015 6:12:43 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="herudi.model.Manufacturer" table="MANUFACTURER" schema="APP" optimistic-lock="version">
+        <id name="manufacturerId" type="int">
+            <column name="MANUFACTURER_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="NAME" length="30" />
+        </property>
+        <property name="addressline1" type="string">
+            <column name="ADDRESSLINE1" length="30" />
+        </property>
+        <property name="addressline2" type="string">
+            <column name="ADDRESSLINE2" length="30" />
+        </property>
+        <property name="city" type="string">
+            <column name="CITY" length="25" />
+        </property>
+        <property name="state" type="string">
+            <column name="STATE" length="2" />
+        </property>
+        <property name="zip" type="string">
+            <column name="ZIP" length="10" />
+        </property>
+        <property name="phone" type="string">
+            <column name="PHONE" length="12" />
+        </property>
+        <property name="fax" type="string">
+            <column name="FAX" length="12" />
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL" length="40" />
+        </property>
+        <property name="rep" type="string">
+            <column name="REP" length="30" />
+        </property>
+    </class>
+</hibernate-mapping>

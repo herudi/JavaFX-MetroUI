@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 9, 2015 6:12:43 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="herudi.model.MicroMarket" table="MICRO_MARKET" schema="APP" optimistic-lock="version">
+        <id name="zipCode" type="string">
+            <column name="ZIP_CODE" length="10" />
+            <generator class="assigned" />
+        </id>
+        <property name="radius" type="java.lang.Double">
+            <column name="RADIUS" precision="52" scale="0" />
+        </property>
+        <property name="areaLength" type="java.lang.Double">
+            <column name="AREA_LENGTH" precision="52" scale="0" />
+        </property>
+        <property name="areaWidth" type="java.lang.Double">
+            <column name="AREA_WIDTH" precision="52" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 9, 2015 6:12:43 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="herudi.model.PurchaseOrder" table="PURCHASE_ORDER" schema="APP" optimistic-lock="version">
+        <id name="orderNum" type="int">
+            <column name="ORDER_NUM" />
+            <generator class="assigned" />
+        </id>
+        <property name="customerId" type="int">
+            <column name="CUSTOMER_ID" not-null="true" />
+        </property>
+        <property name="productId" type="int">
+            <column name="PRODUCT_ID" not-null="true" />
+        </property>
+        <property name="quantity" type="java.lang.Short">
+            <column name="QUANTITY" />
+        </property>
+        <property name="shippingCost" type="big_decimal">
+            <column name="SHIPPING_COST" precision="12" />
+        </property>
+        <property name="salesDate" type="date">
+            <column name="SALES_DATE" length="10" />
+        </property>
+        <property name="shippingDate" type="date">
+            <column name="SHIPPING_DATE" length="10" />
+        </property>
+        <property name="freightCompany" type="string">
+            <column name="FREIGHT_COMPANY" length="30" />
+        </property>
+    </class>
+</hibernate-mapping>

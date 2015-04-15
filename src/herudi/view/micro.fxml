@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="652.0" prefWidth="1225.0" style="-fx-background-color: white;" stylesheets="@../css/Metro-UI.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="herudi.controller.microMarketController">
+   <children>
+      <AnchorPane fx:id="paneTabel" layoutY="91.0" opacity="0.0" prefHeight="560.0" prefWidth="924.0">
+         <children>
+            <TableView fx:id="tableData" layoutX="7.0" layoutY="7.0" onMouseClicked="#aksiKlikTableData" prefHeight="546.0" prefWidth="1226.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="7.0">
+              <columns>
+                  <TableColumn fx:id="colAction" prefWidth="130.0" text="ACTION">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../img/tabel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </TableColumn>
+                <TableColumn fx:id="colZip" prefWidth="135.0" text="ZIP CODE">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../img/tabel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="colRadius" prefWidth="165.0" text="RADIUS">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../img/tabel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="colAreaLength" prefWidth="164.0" text="AREA LENGTH">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../img/tabel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </TableColumn>
+                  <TableColumn fx:id="colAreaWidth" prefWidth="160.0" text="AREA WIDTH">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="28.0" opacity="0.49" pickOnBounds="true" smooth="false">
+                           <image>
+                              <Image url="@../img/tabel.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </TableColumn>
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Text fill="#2b579a" layoutX="14.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Micro Market">
+         <font>
+            <Font name="Segoe UI Semilight" size="48.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutX="948.0" layoutY="89.0" prefHeight="560.0" prefWidth="277.0" style="-fx-border-color: white white white #cccccc;">
+         <children>
+            <Text fill="#2b579a" layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input Data">
+               <font>
+                  <Font name="Segoe UI Semilight" size="24.0" />
+               </font>
+            </Text>
+            <VBox layoutX="14.0" layoutY="56.0" spacing="3.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="56.0" text="*Zip Code" textFill="#9a3434" />
+                  <HBox layoutX="14.0" layoutY="82.0" spacing="3.0">
+                     <children>
+                        <TextField fx:id="txtZipCode" layoutX="14.0" layoutY="82.0" prefHeight="27.0" prefWidth="162.0" promptText="Cek Zip Code" />
+                        <Button fx:id="btnCek" defaultButton="true" layoutX="194.0" layoutY="82.0" mnemonicParsing="false" onAction="#aksiCek" prefHeight="27.0" prefWidth="79.0" styleClass="btn" text="Cek" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="vboxCrud" disable="true" layoutX="14.0" layoutY="113.0" spacing="10.0">
+               <children>
+                  <VBox layoutX="14.0" layoutY="113.0" spacing="3.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="115.0" text="Radius" />
+                        <TextField fx:id="txtRadius" layoutX="14.0" layoutY="132.0" onKeyReleased="#keyRadius" prefHeight="27.0" prefWidth="245.0" promptText="Radius" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="14.0" layoutY="170.0" spacing="3.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="115.0" text="Area Length" />
+                        <TextField fx:id="txtAreaLength" layoutX="14.0" layoutY="132.0" onKeyReleased="#keyAreaLength" prefHeight="27.0" prefWidth="245.0" promptText="Length" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="14.0" layoutY="227.0" spacing="3.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="115.0" text="Area Width" />
+                        <TextField fx:id="txtAreaWidth" layoutX="14.0" layoutY="132.0" onKeyReleased="#keyAreaWidth" prefHeight="27.0" prefWidth="245.0" promptText="Width" />
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="14.0" prefWidth="245.0">
+                     <children>
+                        <Region prefHeight="27.0" prefWidth="171.0" />
+                        <Button fx:id="btnSave" defaultButton="true" mnemonicParsing="false" onAction="#aksiSave" prefHeight="27.0" prefWidth="88.0" styleClass="btn" text="Save" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="imgLoad" fitHeight="33.0" fitWidth="40.0" layoutX="308.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/301.GIF" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="bar" layoutY="84.0" prefHeight="3.0" prefWidth="1225.0" progress="0.0" />
+   </children>
+</AnchorPane>
